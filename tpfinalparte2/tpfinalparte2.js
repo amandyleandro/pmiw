@@ -1,3 +1,4 @@
+// Video explicativo: https://youtu.be/5zuScv_lKdY
 let juego;
 
 function preload() {
