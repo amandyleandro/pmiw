@@ -1,6 +1,7 @@
 class Personaje {
     constructor() {
-        this.tamano = 48;
+        this.ancho = 67;
+        this.alto = 61;
         this.columna = -1;
         this.fila = -1;
         this.posX = 100;
@@ -46,10 +47,8 @@ class Personaje {
     }
 
     mostrar(imagenPersonaje) {
-        let ancho = 67;
-        let alto = 61;
-        let posX = this.posX - ancho / 2;
-        let posY = this.posY - alto / 2;
-        image(imagenPersonaje, posX, posY, ancho, alto);
+        let posX = this.posX - this.ancho / 2;
+        let posY = this.posY - this.alto / 2;
+        image(imagenPersonaje, posX, posY, this.ancho, this.alto);
     }
 }
