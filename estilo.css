@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Ledger&display=swap');
+
+@font-face {
+    font-family: "Justinian";
+    src: url("fonts/Justv2.ttf");
+}
+
+body {
+    background-color: #080e18;
+    color: #f5f5f5;
+    font-family: "Bellefair", serif;
+}
+
+section {
+    padding: 60px 30px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+
+/* HEADER */
+
+.encabezado {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 1rem;
+    padding: 0px 20px;
+    position: absolute;
+    z-index: 10;
+}
+
+#menuPrincipal.show {
+    margin-top: 25px;
+    /* background-color: #040f1b75; */
+    border-radius: 10px;
+}
+
+/* LOGO */
+
+.encabezado .navbar-brand img {
+    width: 140px;
+    height: auto;
+}
+
+/* ENLACES DEL MENÚ */
+
+.encabezado .nav-link {
+    background-color: transparent;
+    color: #f5f5f5;
+    font-size: 24px;
+    margin-left: 15px;
+    padding: 8px;
+    align-items: center;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.encabezado .nav-link:hover {
+    color: #007CFE;
+}
+
+#inicio{
+    min-height: 950px;
+    background-image: url("img/bannerPrincipal.png");
+    background-position: center;
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+    border-radius: 0px 0px 60px 60px;
+}
+
+.contenido-banner{
+    margin-top: 9rem;
+}
+
+.info-banner{
+    color: #f5f5f5;
+    text-align: right;
+}
+.info-banner h1{
+    font-size: 36px;
+    font-family: "Justinian";
+}
+
+.info-banner h2{
+    font-size: 20px;
+    font-family: "Justinian";
+}
+
+.info-banner p{
+    margin-top: 25px;
+}
+
+.btn-banner{
+    margin-top: 25px;
+}
+
+.btn-banner a{
+    font-size: 24px;
+}
+
+.btn-outline-secondary{
+    color: #f5f5f5;
+}
+
+.btn-primary{
+    background-color: #007CFE;
+}
+
+.btn-primary {
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #007CFE;
+}
+
+.btn-outline-secondary {
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-color: #007CFE;
+    --bs-btn-hover-border-color: #007CFE;
+}
+
+.creditos-banner {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    right: 40px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.separador {
+    width: 2.5px;
+    height: 50px;
+    background-color: #007CFE;
+}
+
+.info-integrantes, .info-facultad{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+@media (max-width: 770px) {
+    #inicio {
+        /*min-width: 770px;
+        height: 100%;*/
+        background-position: top center;
+        background-image: url("img/bannerPrincipalMobile.png");
+    }
+}
+
+@media (max-width: 767.98px) {
+    
+    .encabezado .navbar-brand img {
+    width: 100px;
+    height: auto;
+    }
+
+    .contenido-banner{
+        margin-top: 5rem;
+    }
+
+    .info-banner h1 {
+        font-size: 26px;
+        padding-right: 0px;
+    }
+
+    .info-banner h2 {
+        font-size: 20px;
+    }
+
+    .info-banner p {
+        font-size: 20px;
+    }
+
+    .btn-banner a {
+        font-size: 20px;
+    }
+
+}
